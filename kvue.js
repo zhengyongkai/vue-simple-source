@@ -52,6 +52,7 @@ class KVue {
     //响应式处理
     observe(this.$data);
     proxy(this,'$data')
+    new Compile(options.el,this)
   }
 }
 //根据对象类型决定如何做相应
